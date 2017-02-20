@@ -1,0 +1,109 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.reach-out-carousel {
+    background-color: #0073CF;
+    min-height: 589px;
+    header {
+        h1 {
+            font-size: 42px;
+            color: #FFFFFF;
+            padding: 46px 0;
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    .box-item {
+        margin: 0 auto;
+        max-width: 300px;
+        .description {
+            background-color: #FFFFFF;
+            min-height: 255px;
+            padding: 25px;
+            h2 {
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: bold;
+                margin: 0 0 12px 0;
+            }
+            h3 {
+                color: #0073cf;
+                font-size: 28px;
+                line-height: 28px;
+                font-weight: bold;
+                margin: 0 0 16px 0;
+            }
+            p {
+                font-size: 18px;
+                line-height: 18px;
+                margin: 0;
+            }
+        }
+    }
+    .slick-arrow {
+        width: 50px;
+        height: 51px;
+        margin: 0 auto;
+        vertical-align: middle;
+        position: relative;
+        top: 200px;
+        &.prev-arrow {
+            background-image: url("../images/left-arrow.png");
+        }
+        &.next-arrow {
+            background-image: url("../images/right-arrow.png");
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &.slick-disabled {
+            cursor: not-allowed;
+        }
+    }
+}
